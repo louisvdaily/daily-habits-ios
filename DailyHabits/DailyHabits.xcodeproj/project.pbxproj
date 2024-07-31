@@ -86,16 +86,33 @@
 		5CDFC1792C5AD1F500762728 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				5CDFC1822C5AD92400762728 /* Providers */,
+				5CDFC1822C5AD92400762728 /* Stores */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		5CDFC1822C5AD92400762728 /* Providers */ = {
+		5CDFC1822C5AD92400762728 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				5CDFC1832C5ADB7E00762728 /* CoreData */,
 			);
-			path = Providers;
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		5CDFC1832C5ADB7E00762728 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFC1842C5ADC5500762728 /* Schema */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5CDFC1842C5ADC5500762728 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFC17F2C5AD8FB00762728 /* DailyHabits.xcdatamodeld */,
+			);
+			path = Schema;
 			sourceTree = "<group>";
 		};
 		5CE497C62C5AAF0700C52298 = {
@@ -123,7 +140,6 @@
 		5CE497D12C5AAF0700C52298 /* DailyHabits */ = {
 			isa = PBXGroup;
 			children = (
-				5CDFC17F2C5AD8FB00762728 /* DailyHabits.xcdatamodeld */,
 				5CDFC1782C5AD1D400762728 /* Shared */,
 				5CE497D22C5AAF0700C52298 /* DailyHabitsApp.swift */,
 				5CE497D42C5AAF0700C52298 /* ContentView.swift */,
@@ -630,8 +646,7 @@
 				5CDFC1802C5AD8FB00762728 /* DailyHabits.xcdatamodel */,
 			);
 			currentVersion = 5CDFC1802C5AD8FB00762728 /* DailyHabits.xcdatamodel */;
-			name = DailyHabits.xcdatamodeld;
-			path = "/Users/louisvdaily/Development/Mobile/daily-habits-ios/DailyHabits/DailyHabits/DailyHabits.xcdatamodeld";
+			path = DailyHabits.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

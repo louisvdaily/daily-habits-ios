@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Completion" representedClassName="Completion" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="status" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Habit" inverseName="completions" inverseEntity="Habit"/>
+    </entity>
+    <entity name="Habit" representedClassName="Habit" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptionText" attributeType="String"/>
+        <attribute name="frequency" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="completions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Completion" inverseName="habit" inverseEntity="Completion"/>
+        <relationship name="rewards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Reward" inverseName="habit" inverseEntity="Reward"/>
+    </entity>
+    <entity name="Reward" representedClassName="Reward" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptionText" attributeType="String"/>
+        <attribute name="habitId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="threshold" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Habit" inverseName="rewards" inverseEntity="Habit"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="avatarImage" optional="YES" attributeType="Binary"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+    </entity>
+</model>
