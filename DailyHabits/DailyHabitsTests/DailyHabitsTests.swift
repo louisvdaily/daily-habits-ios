@@ -1,7 +1,7 @@
 import XCTest
-@testable import Daily_Habits
+@testable import DailyHabits
 
-final class Daily_HabitsTests: XCTestCase {
+final class DailyHabitsTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

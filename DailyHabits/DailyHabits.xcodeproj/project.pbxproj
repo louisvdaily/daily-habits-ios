@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CDFC1812C5AD8FB00762728 /* DailyHabits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CDFC17F2C5AD8FB00762728 /* DailyHabits.xcdatamodeld */; };
 		5CE497D32C5AAF0700C52298 /* DailyHabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497D22C5AAF0700C52298 /* DailyHabitsApp.swift */; };
 		5CE497D52C5AAF0700C52298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497D42C5AAF0700C52298 /* ContentView.swift */; };
 		5CE497D72C5AAF0800C52298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE497D62C5AAF0800C52298 /* Assets.xcassets */; };
 		5CE497DA2C5AAF0800C52298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE497D92C5AAF0800C52298 /* Preview Assets.xcassets */; };
 		5CE497DC2C5AAF0800C52298 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497DB2C5AAF0800C52298 /* Persistence.swift */; };
-		5CE497DF2C5AAF0800C52298 /* DailyHabits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497DD2C5AAF0800C52298 /* DailyHabits.xcdatamodeld */; };
 		5CE497E92C5AAF0800C52298 /* DailyHabitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497E82C5AAF0800C52298 /* DailyHabitsTests.swift */; };
 		5CE497F32C5AAF0800C52298 /* DailyHabitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497F22C5AAF0800C52298 /* DailyHabitsUITests.swift */; };
 		5CE497F52C5AAF0800C52298 /* DailyHabitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE497F42C5AAF0800C52298 /* DailyHabitsUITestsLaunchTests.swift */; };
@@ -36,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CDFC1802C5AD8FB00762728 /* DailyHabits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyHabits.xcdatamodel; sourceTree = "<group>"; };
 		5CE497CF2C5AAF0700C52298 /* DailyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE497D22C5AAF0700C52298 /* DailyHabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHabitsApp.swift; sourceTree = "<group>"; };
 		5CE497D42C5AAF0700C52298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CE497D62C5AAF0800C52298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE497D92C5AAF0800C52298 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CE497DB2C5AAF0800C52298 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		5CE497DE2C5AAF0800C52298 /* Daily_Habits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_Habits.xcdatamodel; sourceTree = "<group>"; };
 		5CE497E42C5AAF0800C52298 /* DailyHabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyHabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE497E82C5AAF0800C52298 /* DailyHabitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHabitsTests.swift; sourceTree = "<group>"; };
 		5CE497EE2C5AAF0800C52298 /* DailyHabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyHabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +75,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CDFC1782C5AD1D400762728 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFC1792C5AD1F500762728 /* Data */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5CDFC1792C5AD1F500762728 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFC1822C5AD92400762728 /* Providers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5CDFC1822C5AD92400762728 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		5CE497C62C5AAF0700C52298 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +106,9 @@
 				5CE497F12C5AAF0800C52298 /* DailyHabitsUITests */,
 				5CE497D02C5AAF0700C52298 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		5CE497D02C5AAF0700C52298 /* Products */ = {
 			isa = PBXGroup;
@@ -98,11 +123,12 @@
 		5CE497D12C5AAF0700C52298 /* DailyHabits */ = {
 			isa = PBXGroup;
 			children = (
+				5CDFC17F2C5AD8FB00762728 /* DailyHabits.xcdatamodeld */,
+				5CDFC1782C5AD1D400762728 /* Shared */,
 				5CE497D22C5AAF0700C52298 /* DailyHabitsApp.swift */,
 				5CE497D42C5AAF0700C52298 /* ContentView.swift */,
 				5CE497D62C5AAF0800C52298 /* Assets.xcassets */,
 				5CE497DB2C5AAF0800C52298 /* Persistence.swift */,
-				5CE497DD2C5AAF0800C52298 /* DailyHabits.xcdatamodeld */,
 				5CE497D82C5AAF0800C52298 /* Preview Content */,
 			);
 			path = DailyHabits;
@@ -265,7 +291,7 @@
 			files = (
 				5CE497DC2C5AAF0800C52298 /* Persistence.swift in Sources */,
 				5CE497D52C5AAF0700C52298 /* ContentView.swift in Sources */,
-				5CE497DF2C5AAF0800C52298 /* DailyHabits.xcdatamodeld in Sources */,
+				5CDFC1812C5AD8FB00762728 /* DailyHabits.xcdatamodeld in Sources */,
 				5CE497D32C5AAF0700C52298 /* DailyHabitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,13 +624,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5CE497DD2C5AAF0800C52298 /* DailyHabits.xcdatamodeld */ = {
+		5CDFC17F2C5AD8FB00762728 /* DailyHabits.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5CE497DE2C5AAF0800C52298 /* Daily_Habits.xcdatamodel */,
+				5CDFC1802C5AD8FB00762728 /* DailyHabits.xcdatamodel */,
 			);
-			currentVersion = 5CE497DE2C5AAF0800C52298 /* Daily_Habits.xcdatamodel */;
-			path = DailyHabits.xcdatamodeld;
+			currentVersion = 5CDFC1802C5AD8FB00762728 /* DailyHabits.xcdatamodel */;
+			name = DailyHabits.xcdatamodeld;
+			path = "/Users/louisvdaily/Development/Mobile/daily-habits-ios/DailyHabits/DailyHabits/DailyHabits.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
